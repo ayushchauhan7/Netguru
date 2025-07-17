@@ -4,3 +4,19 @@
 * {
 	font-family: "Outfit", sans-serif;
 }
+
+body {
+	background-color: #1a1a1a; /* Dark background color */
+	color: white;
+}
+
+/* You can add this to a component that renders the main content if you want to be more specific */
+.accelerate-digital {
+	font-size: 4rem; /* Or any other size you prefer */
+	font-weight: bold;
+}
+
+.accelerate-digital .digital {
+	color: #00e676; /* Green color for the word "digital" */
+}
+

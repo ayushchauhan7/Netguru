@@ -6,6 +6,9 @@ import ResultsSection from "./components/ResultsSection.jsx";
 import TestimonialsSection from "./components/TestimonialsSection.jsx";
 import WhyNetguruSection from "./components/WhyNetguruSection.jsx";
 import ClientsSection from "./components/ClientsSection.jsx";
+import InsightsSection from "./components/InsightsSection.jsx";
+import Hero from "./components/Hero.jsx";
+import Footer from "./components/Footer.jsx";
 
 const App = () => {
 	return (
@@ -17,6 +20,9 @@ const App = () => {
 			<TestimonialsSection />
 			<WhyNetguruSection />
 			<ClientsSection />
+			<InsightsSection />
+			<Hero />
+			<Footer />
 		</>
 	);
 };

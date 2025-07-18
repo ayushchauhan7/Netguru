@@ -2,7 +2,7 @@ import React from "react";
 
 const ServiceTop = () => {
 	return (
-		<section className="relative z-5">
+		<section className="relative z-20">
 			{/*<Nav />*/}
 			{/* Background image overlay */}
 			<div className="inset-0 items-center flex absolute">

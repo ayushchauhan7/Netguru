@@ -23,15 +23,20 @@ function WhyNetguruSection() {
 				/>
 
 				{/* Background Watermark Effect */}
-				<div
-					aria-hidden="true"
-					className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center"
-				>
-					<img src="https://www.netguru.com/hubfs/images/logos/favicon.ico" className='' alt=""/>
-					<p className="text-[22rem] font-black text-white opacity-[0.03] -rotate-12 pointer-events-none">
-						Netguru
-					</p>
-				</div>
+<div
+  aria-hidden="true"
+  className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden"
+>
+  {/* Optional logo image */}
+  <img
+    src="https://www.netguru.com/hubfs/images/logos/favicon.ico"
+    alt=""
+    className="w-10 h-10 md:w-12 md:h-12 opacity-10"
+  />
+  <p className="absolute text-[6rem] md:text-[10rem] lg:text-[18rem] xl:text-[22rem] font-black text-white opacity-[0.03] -rotate-12 whitespace-nowrap">
+    Netguru
+  </p>
+</div>
 
 				{/* Main Content Grid */}
 				<div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -51,7 +56,7 @@ function WhyNetguruSection() {
 					{/* Right Column: Statistics Grid */}
 					<div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
 						{statsData.map((stat, index) => (
-							<div key={index} className="bg-gray-800 p-8 rounded-lg text-center">
+							<div key={index} className=" bg-[#25292C]/60 p-8 rounded-lg text-center">
 								<p className="text-5xl font-extrabold text-white">{stat.value}</p>
 								<p className="mt-3 text-base text-gray-400">{stat.label}</p>
 							</div>

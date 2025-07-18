@@ -55,7 +55,7 @@ const testimonialsData = [
 ];
 
 const TestimonialsSection = () => (
-	<section className="bg-gray-900 py-20 px-4 sm:px-6 lg:px-8">
+	<section className="bg-[#25292C] py-20 px-4 sm:px-6 lg:px-8">
 		<div className="max-w-7xl mx-auto">
 			{/* Section Header updated to match the image */}
 			<h2 className="text-4xl font-bold text-white mb-12">
@@ -67,7 +67,7 @@ const TestimonialsSection = () => (
 				{testimonialsData.map((testimonial) => (
 					<div
 						key={testimonial.id}
-						className="bg-gray-800 rounded-lg p-8 flex flex-col"
+						className="bg-black rounded-lg p-8 flex flex-col"
 					>
 						{/* Client Logo with filter to make it white */}
 						<img

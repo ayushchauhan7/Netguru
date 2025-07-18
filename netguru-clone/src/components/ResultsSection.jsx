@@ -22,7 +22,7 @@ const statsData = [
 
 function ResultsSection() {
 	return (
-		<div className="bg-gray-900 text-white">
+		<div className="bg-black text-white">
 			<section className="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8">
 
 				{/* Header Section */}
@@ -43,7 +43,7 @@ function ResultsSection() {
 				{/* Statistics Grid */}
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 					{statsData.map((item, index) => (
-						<div key={index} className="bg-gray-800 p-8 rounded-lg flex flex-col">
+						<div key={index} className="bg-[#25292C] p-8 rounded-lg flex flex-col">
 							<p className="text-5xl font-bold text-white mb-4">
 								{item.stat}
 							</p>

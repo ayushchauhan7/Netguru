@@ -8,11 +8,13 @@ import InsightsSection from "../components/InsightsSection.jsx";
 import TestimonialsSection from "../components/TestimonialsSection.jsx";
 import WhyNetguruSection from "../components/WhyNetguruSection.jsx";
 import ClientsSection from "../components/ClientsSection.jsx";
-
+import HomeCards from "../components/HomeCards.jsx"; // Assuming this is the correct import for HomeCards
 const HomePage = () => {
 	return (
-		<>
+		<div className='w-full min-h-screen'>
+			
 		<Navbar />
+		<HomeCards />
 		<HeroSection />
 		<InteractiveProcessSection />
 		<ResultsSection />
@@ -21,7 +23,8 @@ const HomePage = () => {
 		<ClientsSection />
 		<InsightsSection />
 		<Footer />
-		</>
+		
+			</div>
 	);
 };
 export default HomePage;

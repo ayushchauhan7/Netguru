@@ -44,7 +44,7 @@ const ArrowIcon = ({ className = "w-6 h-6" }) => (
 
 function InsightsSection() {
 	return (
-		<section className="bg-gray-900 text-white py-24 px-4 sm:px-6 lg:px-8">
+		<section className="bg-black text-white py-24 px-4 sm:px-6 lg:px-8">
 			<div className="max-w-7xl mx-auto">
 				{/* Section Header */}
 				<div className="flex flex-col sm:flex-row justify-between sm:items-center gap-4 mb-12">
@@ -68,7 +68,7 @@ function InsightsSection() {
 						<a
 							key={insight.id}
 							href={insight.link}
-							className="group flex flex-col bg-gray-800 rounded-lg overflow-hidden transition-transform hover:scale-105"
+							className="group flex flex-col bg-[#25292C] rounded-lg overflow-hidden transition-transform hover:scale-105"
 						>
 							<img src={insight.imageUrl} alt={insight.title} className="w-full h-56 object-cover" />
 

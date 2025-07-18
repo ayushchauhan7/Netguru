@@ -19,7 +19,7 @@ const clientLogos = [
 
 function ClientsSection() {
 	return (
-		<div className="bg-gray-900">
+		<div className=" bg-[#25292C]">
 			<section className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
 
 				{/* Header Section */}

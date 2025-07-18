@@ -69,24 +69,54 @@ const Navbar = () => {
 			</div>
 
 			{/* Floating CTA */}
-			<div className="absolute top-1/2 right-6 md:right-12 transform -translate-y-1/2 z-20">
-				<div className="bg-white shadow-xl rounded-lg p-4 w-48">
+			<div className=" absolute 
+    hidden sm:block
+    top-1/2 right-6 transform -translate-y-1/2 
+    z-20">
+				<div className="bg-gray shadow-xl  w-48">
 					<img
-						src="https://thumbs.dreamstime.com/z/n-gray-color-illustration-n-gray-color-illustration-n-dot-monogram-289942276.jpg"
+						src="https://493098.fs1.hubspotusercontent-na1.net/hub/493098/hubfs/CTA%20AI%20agents%20ebook.png?width=340&height=340&name=CTA%20AI%20agents%20ebook.png"
 						alt="Netguru Guide to AI Agents"
-						className="rounded mb-3"
+						className="mb-3"
 					/>
-					<p className="text-sm text-gray-800 font-semibold mb-2">
+					<p className="text-lg p-1 text-white font-semibold mb-2">
 						Netguru Guide to AI Agents
 					</p>
 					<a
 						href="https://www.netguru.com/resources/ai-agents-implementation-guide"
-						className="inline-block text-green-600 text-xs font-medium hover:underline"
+						className="inline-block p-1 text-white text-lg font-medium hover:underline"
 					>
 						GET YOURS →
 					</a>
 				</div>
 			</div>
+			<div
+  className="
+  absolute 
+  bottom-4 right-4
+  block sm:hidden
+  z-20
+  w-36 bg-gray-800 shadow-lg overflow-hidden
+"
+>
+  <a
+    href="https://www.netguru.com/resources/ai-agents-implementation-guide"
+    className="block"
+  >
+    <img
+      src="https://493098.fs1.hubspotusercontent-na1.net/hub/493098/hubfs/CTA%20AI%20agents%20ebook.png?width=340&height=340&name=CTA%20AI%20agents%20ebook.png"
+      alt="Netguru Guide to AI Agents"
+      className="w-full h-auto"
+    />
+    <div className="p-2">
+      <p className="text-sm text-white font-semibold">
+        Guide to AI Agents
+      </p>
+      <p className="text-xs text-white underline">GET YOURS →</p>
+    </div>
+  </a>
+</div>
+
 		</header>
 	);
 };

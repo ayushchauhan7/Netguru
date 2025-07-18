@@ -3,6 +3,7 @@ import './index.css'
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
 import EstimateProjectPage from "./pages/EstimateProjectPage.jsx";
 import HomePage from "./pages/HomePage.jsx";
+import Services from "./pages/Services.jsx";
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')).render(
 
               {/* The estimate page route */}
               <Route path="estimate-project" element={<EstimateProjectPage />} />
+          <Route path="services" element={<Services />} />
 
               {/* Any other new pages can be added here and will also get the footer */}
               {/* <Route path="about" element={<AboutPage />} /> */}

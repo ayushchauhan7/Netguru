@@ -31,7 +31,7 @@ const Navbar = () => {
 					</a>
 
 					<ul className="hidden md:flex gap-8 text-white font-medium">
-						<li><a href="#" className="hover:text-gray-300 transition">Services</a></li>
+						<li><a href="/services" className="hover:text-gray-300 transition">Services</a></li>
 						<li><a href="#" className="hover:text-gray-300 transition">Industries</a></li>
 						<li><a href="#" className="hover:text-gray-300 transition">Clients</a></li>
 						<li><a href="#" className="hover:text-gray-300 transition">About us</a></li>

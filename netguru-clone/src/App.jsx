@@ -11,12 +11,14 @@ import React from 'react';
 // import Footer from "./components/Footer.jsx";
 import EstimateProjectPage from "./pages/EstimateProjectPage.jsx";
 import HomePage from "./pages/HomePage.jsx";
+import Services from "./pages/Services.jsx";
 
 const App = () => {
 	return (
 		<>
 		<HomePage />
 			<EstimateProjectPage />
+			<Services />
 		</>
 	);
 };

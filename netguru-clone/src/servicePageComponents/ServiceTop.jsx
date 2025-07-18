@@ -2,15 +2,16 @@ import React from "react";
 
 const ServiceTop = () => {
 	return (
-		<section className="relative bg-gray-100">
+		<section className="relative z-5">
+			{/*<Nav />*/}
 			{/* Background image overlay */}
-			<div className="absolute inset-0">
+			<div className="inset-0 items-center flex absolute">
 				<img
 					src="https://www.netguru.com/hs-fs/hubfs/Krak%C3%B3w%20Hub%20photoshoot%202022/Krak%C3%B3w%20Hub%20photoshoot%202022_2080.jpg?width=4336&height=2895&name=Krak%C3%B3w%20Hub%20photoshoot%202022_2080.jpg"
 					alt="Kraków Hub photoshoot"
-					className="w-full h-full object-cover opacity-80"
+					className="w-full h-auto"
 				/>
-				<div className="absolute inset-0 bg-black bg-opacity-50"></div>
+				<div className="absolute inset-0"></div>
 			</div>
 			{/* Content */}
 			<div className="relative z-10 flex flex-col items-start justify-center h-[420px] px-6 md:px-16 lg:px-24">
@@ -27,6 +28,7 @@ const ServiceTop = () => {
 					Estimate project &rarr;
 				</button>
 			</div>
+
 		</section>
 	);
 };

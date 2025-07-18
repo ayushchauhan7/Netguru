@@ -5,7 +5,7 @@ const Nav = () => {
 	return (
 		<>
 			{/* Dark Overlay */}
-			<div className="absolute top-0 left-0 w-full h-full bg-black/40 z-0" />
+			<div className="absolute top-0 left-0 w-full h-full  z-0" />
 
 			{/* Navbar */}
 			<nav className="relative z-10 w-full px-6 lg:px-20 py-6 flex justify-between items-center">

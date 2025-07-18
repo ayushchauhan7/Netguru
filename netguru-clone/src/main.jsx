@@ -1,12 +1,25 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
+import EstimateProjectPage from "./pages/EstimateProjectPage.jsx";
+import HomePage from "./pages/HomePage.jsx";
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
       <Routes>
-          <Route path="/" element={<App />}/>
+          {/* This Route uses MainLayout for all nested routes */}
+          <Route index element={<HomePage />} />
+
+              {/* The index route is your homepage */}
+
+              {/* The estimate page route */}
+              <Route path="estimate-project" element={<EstimateProjectPage />} />
+
+              {/* Any other new pages can be added here and will also get the footer */}
+              {/* <Route path="about" element={<AboutPage />} /> */}
+
+
+
       </Routes>
   </BrowserRouter>,
 )

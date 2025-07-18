@@ -1,12 +1,13 @@
 import React from 'react';
 import Footer from "../components/Footer.jsx";
+import Nav from "../components/Nav.jsx";
 
 // Data for the client logos
 const clientLogos = [
-	{ name: 'Keller Williams', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Keller_Williams_logo.svg/2560px-Keller_Williams_logo.svg.png' },
-	{ name: 'UBS', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/UBS_Logo_2022.svg/2560px-UBS_Logo_2022.svg.png' },
-	{ name: 'Merck', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Merck_Group_logo_2017.svg/2560px-Merck_Group_logo_2017.svg.png' },
-	{ name: 'IKEA', logoUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Ikea_logo.svg/2560px-Ikea_logo.svg.png' },
+	{ name: 'Keller Williams', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/keller-williams.svg' },
+	{ name: 'UBS', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/ubs.svg' },
+	{ name: 'Merck', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/merck.svg' },
+	{ name: 'IKEA', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/ikea.svg' },
 ];
 
 // Reusable input component for the form
@@ -29,6 +30,7 @@ const FormInput = ({ label, name, type = 'text', placeholder = '', required = fa
 function EstimateProjectPage() {
 	return (
 		<>
+			<Nav />
 		<div className="bg-gray-900 text-white">
 			<div className="max-w-4xl mx-auto py-20 px-4 sm:px-6 lg:px-8">
 

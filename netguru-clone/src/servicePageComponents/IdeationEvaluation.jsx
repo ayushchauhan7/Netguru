@@ -9,7 +9,7 @@ const IdeationEvaluation = () => {
 	];
 
 	return (
-		<div className="bg-black text-white font-sans w-full py-20 px-4 z-2	">
+		<div className="bg-black text-white font-sans w-full py-20 px-4">
 			{/* Navigation */}
 			<nav className="mb-24">
 				<ul className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-gray-300">

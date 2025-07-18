@@ -12,6 +12,10 @@ import React from 'react';
 import EstimateProjectPage from "./pages/EstimateProjectPage.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import Services from "./pages/Services.jsx";
+import Insights from "./pages/Insights.jsx";
+import AboutUs from "./pages/AboutUs.jsx";
+import ClientsPage from "./pages/ClientsPage.jsx";
+import IndustriesPage from "./pages/IndustriesPage.jsx";
 
 const App = () => {
 	return (
@@ -19,6 +23,10 @@ const App = () => {
 		<HomePage />
 			<EstimateProjectPage />
 			<Services />
+			<Insights />
+			<AboutUs />
+			<ClientsPage />
+			<IndustriesPage />
 		</>
 	);
 };

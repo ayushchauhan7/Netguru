@@ -35,7 +35,7 @@ const Navbar = () => {
 						<li><a href="#" className="hover:text-gray-300 transition">Industries</a></li>
 						<li><a href="#" className="hover:text-gray-300 transition">Clients</a></li>
 						<li><a href="#" className="hover:text-gray-300 transition">About us</a></li>
-						<li><a href="#" className="hover:text-gray-300 transition">Insights</a></li>
+						<li><a href="/blog" className="hover:text-gray-300 transition">Insights</a></li>
 					</ul>
 				</div>
 

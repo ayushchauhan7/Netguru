@@ -13,7 +13,8 @@
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  max-width: 1200px;
+  width:80%;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 2.4rem;
   gap: 4rem;

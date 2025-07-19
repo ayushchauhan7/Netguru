@@ -77,7 +77,7 @@ function Footer() {
 						<h3 className="font-bold text-white text-lg">Digital Acceleration Editorial</h3>
 						<p className="mt-2 mb-4 text-sm">Boost innovation with insights for change</p>
 						<form className="flex flex-col sm:flex-row gap-4">
-							<input type="email" placeholder="Your e-mail" className="flex-grow bg-gray-800 border border-gray-700 rounded-md px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-400" />
+							<input type="email" placeholder="Your e-mail" className="flex-grow bg-gray border border-gray-700 rounded-md px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-400" />
 							<button type="submit" className="bg-green-500 text-white font-bold px-6 py-2 rounded-md hover:bg-green-600 transition">
 								Submit
 							</button>

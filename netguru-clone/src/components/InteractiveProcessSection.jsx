@@ -86,6 +86,6 @@ function InteractiveProcessSection() {
 			</div>
 		</section>
 	);
-};
+}
 
 export default InteractiveProcessSection;

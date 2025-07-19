@@ -21,7 +21,7 @@ const FormInput = ({ label, name, type = 'text', placeholder = '', required = fa
 			name={name}
 			id={name}
 			placeholder={placeholder}
-			className="w-full bg-gray-800 border border-gray-700 rounded-md px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-400"
+			className="w-full bg-grey border border-gray-700 rounded-md px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-400"
 			required={required}
 		/>
 	</div>
@@ -31,7 +31,7 @@ function EstimateProjectPage() {
 	return (
 		<>
 			<Nav />
-		<div className="bg-gray-900 text-white">
+		<div className="bg-black text-white">
 			<div className="max-w-4xl mx-auto py-20 px-4 sm:px-6 lg:px-8">
 
 				{/* Header Section */}
@@ -67,7 +67,7 @@ function EstimateProjectPage() {
 							id="project-details"
 							name="project-details"
 							rows="6"
-							className="w-full bg-gray-800 border border-gray-700 rounded-md px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-400"
+							className="w-full bg-gray border border-gray-700 rounded-md px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-400"
 							required
 						></textarea>
 					</div>

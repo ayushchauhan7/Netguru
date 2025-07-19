@@ -16,7 +16,7 @@ const ArrowIcon = () => (
 
 function HeroSection() {
 	return (
-		<div className="bg-gray-900">
+		<div className="bg-gray-900 h-full w-full">
 			<section className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
 
 				{/* Background container for your image URL and an overlay */}

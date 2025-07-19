@@ -22,13 +22,12 @@ const partnerships = [
 ];
 
 const recognitions = [
-	{ name: 'Clutch', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/clutch.svg' },
-	{ name: 'Awwwards', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/awwwards.svg' },
-	{ name: 'Inc. 5000', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/inc-5000.svg' },
-	{ name: 'EY Entrepreneur of the Year', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/ey-entrepreneur-of-the-year.svg' },
-	{ name: 'Forbes', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/forbes.svg' },
+    { name: 'Clutch', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/clutch.svg' },
+    { name: 'Awwwards', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/awwwards.svg' },
+    { name: 'Inc. 5000', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/inc-5000.svg' },
+    { name: 'EY Entrepreneur of the Year', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/ey-entrepreneur-of-the-year.svg' },
+    { name: 'Forbes', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/forbes.svg' },
 ];
-
 
 function Footer() {
 	return (
@@ -134,7 +133,7 @@ function Footer() {
 					</div>
 				</div>
 
-			</div>
+            </div>
 
 			{/* Bottom Bar */}
 			<div className="bg-gray border-t border-gray-800">

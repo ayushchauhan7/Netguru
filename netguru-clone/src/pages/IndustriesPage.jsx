@@ -4,8 +4,12 @@ import { ArrowRight, DollarSign, ShoppingCart, HeartPulse, Home, CheckCircle } f
 // Import your separate Navbar and Footer components
 import Nav from '../components/Nav.jsx';
 import Footer from '../components/Footer.jsx';
+import Navbar from '../components/Navbar.jsx';
 // --- Data for Page Sections ---
-
+import ServiceTop from '../servicePageComponents/ServiceTop.jsx';
+import SecondNavBar from '../servicePageComponents/secondNavBar.jsx';
+import IdeationEvaluation from '../servicePageComponents/IdeationEvaluation.jsx';
+import Card from '../servicePageComponents/card.jsx';
 const industries = [
 	{
 		icon: <DollarSign size={32} className="text-green-400" />,
@@ -38,125 +42,119 @@ const benefits = [
 
 const caseStudies = [
 	{
-		clientLogo: 'https://www.netguru.com/hubfs/solaris-logo-white.svg',
-		title: 'A new core banking system for a Banking-as-a-Service pioneer',
-		imageUrl: 'https://www.netguru.com/hs-fs/hubfs/solarisbank-case-study-cover-1.jpg?width=1080&name=solarisbank-case-study-cover-1.jpg'
+		title: 'Backend Solutions for Solaris, Europe’s Leading Banking-As-A-Service Company',
+		imageUrl: 'https://www.netguru.com/hs-fs/hubfs/_N19%20Modules/N19%20Bespoke%20Case%20Studies/Solarisbank/solarisbank%20on%20a%20laptop%20.jpeg?length=593'
 	},
 	{
-		clientLogo: 'https://www.netguru.com/hubfs/Ikea-logo-white.svg',
-		title: 'A new app to help millions of customers design their dream kitchens',
-		imageUrl: 'https://www.netguru.com/hs-fs/hubfs/ikea-case-study-cover.jpg?width=1080&name=ikea-case-study-cover.jpg'
-	}
+		title: 'Mobile-First: Supporting UBS Designers in Banking App Redesign',
+		imageUrl: 'https://www.netguru.com/hs-fs/hubfs/ikea-case-study-cover.jpg?width=1080&name=ikea-case-study-cover.jpg',
+	},
+	{
+		title: 'Enabling In-App SEPA Payments for French Fintech Unicorn Spendesk',
+		imageUrl: 'https://www.netguru.com/hs-fs/hubfs/Bespoke_Hero_Background%20(1)-2.jpg?length=790' 
+	},{
+		title: 'Backend and Frontend Support for a German Private Equity Investing Platform',
+		imageUrl: 'https://www.netguru.com/hs-fs/hubfs/_N19%20Modules/N19%20Bespoke%20Case%20Studies/Moonfare/moonfare%203.webp?length=593'
+	},{
+		title: 'Transforming the UX Design of a Rising Fintech Star in Mexico',
+		imageUrl: 'https://www.netguru.com/hs-fs/hubfs/swapcs.jpg?length=553'
+	},{
+		title: 'Developing and Refining A Payments App Design Based on Users’ Feedback',
+		imageUrl: 'https://www.netguru.com/hs-fs/hubfs/hero.jpg?length=790'
+	},
+		
 ];
 
-// --- Page-Specific Sub-Components ---
 
-const IndustriesHero = () => (
-	<div className="relative bg-gray-900">
-		<div className="absolute inset-0">
-			<img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop" alt="Team working on a project" />
-			<div className="absolute inset-0 bg-gray-900 opacity-70"></div>
-		</div>
-		<Nav />
-		<div className="relative max-w-4xl mx-auto pt-48 pb-24 text-center px-4">
-			<h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight">
-				We build successful digital products for <span className="text-green-400">every industry</span>
-			</h1>
-			<p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto">
-				From finance to healthcare, we craft custom software solutions that help businesses in all sectors grow and innovate.
-			</p>
-		</div>
-	</div>
-);
+function CaseStudiesSection() {
+  // Use the caseStudies array from above (or import if in another file)
+  const caseStudies = [
+    {
+      title: 'Backend Solutions for Solaris, Europe’s Leading Banking-As-A-Service Company',
+      imageUrl: 'https://www.netguru.com/hs-fs/hubfs/_N19%20Modules/N19%20Bespoke%20Case%20Studies/Solarisbank/solarisbank%20on%20a%20laptop%20.jpeg?length=593'
+    },
+    {
+      title: 'Mobile-First: Supporting UBS Designers in Banking App Redesign',
+      imageUrl: 'https://www.netguru.com/hs-fs/hubfs/_N19%20Modules/N19%20Bespoke%20Case%20Studies/Solarisbank/solarisbank%20on%20a%20laptop%20.jpeg?length=593'
+    },
+    {
+      title: 'Enabling In-App SEPA Payments for French Fintech Unicorn Spendesk',
+      imageUrl: 'https://www.netguru.com/hs-fs/hubfs/Bespoke_Hero_Background%20(1)-2.jpg?length=790' 
+    },
+    {
+      title: 'Backend and Frontend Support for a German Private Equity Investing Platform',
+      imageUrl: 'https://www.netguru.com/hs-fs/hubfs/_N19%20Modules/N19%20Bespoke%20Case%20Studies/Moonfare/moonfare%203.webp?length=593'
+    },
+    {
+      title: 'Transforming the UX Design of a Rising Fintech Star in Mexico',
+      imageUrl: 'https://www.netguru.com/hs-fs/hubfs/swapcs.jpg?length=553'
+    },
+    {
+      title: 'Developing and Refining A Payments App Design Based on Users’ Feedback',
+      imageUrl: 'https://www.netguru.com/hs-fs/hubfs/hero.jpg?length=790'
+    },
+  ];
 
-const IndustryCard = ({ icon, title, description }) => (
-	<div className="bg-white rounded-lg shadow-lg p-8 transition hover:shadow-2xl hover:-translate-y-2">
-		<div className="mb-6">{icon}</div>
-		<h3 className="text-2xl font-bold mb-3">{title}</h3>
-		<p className="text-gray-600 mb-6">{description}</p>
-		<a href="#" className="font-semibold text-green-500 hover:text-green-600 flex items-center gap-2">
-			Learn more <ArrowRight size={16} />
-		</a>
-	</div>
-);
+  // Zig-zag margin top values for each card
+  const zigzag = ["", "md:mt-16", "md:mt-32", "md:-mt-8", "md:mt-20", "md:-mt-4"];
 
-const IndustriesGrid = () => (
-	<div className="bg-gray-50 py-24">
-		<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-				{industries.map(industry => (
-					<IndustryCard key={industry.title} {...industry} />
-				))}
-			</div>
-		</div>
-	</div>
-);
+  return (
+    <div className="bg-[#25292C] font-sans w-full ">
+      <IdeationEvaluation
+        title="Finance "
+        highlight=" case studies"
+        description="Explore next-gen solutions we worked on with our finance clients."
+        layout="row"
+        bg="bg-[#25292C]"
+      />
+      <div
+        className="
+          flex overflow-x-auto gap-6 max-w-[80%] w-full m-auto
+          md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:overflow-visible py-12
+        "
+      >
+        {caseStudies.map((study, idx) => (
+          <div
+            key={study.title}
+            className={`flex-shrink-0 w-[320px] md:w-auto ${zigzag[idx % zigzag.length]}`}
+          >
+            <Card title={study.title} imageUrl={study.imageUrl} />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 
-const BenefitsSection = () => (
-	<div className="bg-white py-24">
-		<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-			<div>
-				<h2 className="text-4xl font-bold mb-6">What you get</h2>
-				<ul className="space-y-4">
-					{benefits.map(benefit => (
-						<li key={benefit} className="flex items-start">
-							<CheckCircle className="h-6 w-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
-							<span className="text-lg text-gray-700">{benefit}</span>
-						</li>
-					))}
-				</ul>
-			</div>
-			<div>
-				<img className="rounded-lg shadow-2xl" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop" alt="Business meeting" />
-			</div>
-		</div>
-	</div>
-);
-
-const FeaturedCaseStudies = () => (
-	<div className="bg-gray-50 py-24">
-		<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-			<h2 className="text-4xl font-bold text-center mb-16">See our partnerships in action</h2>
-			<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-				{caseStudies.map(study => (
-					<div key={study.title} className="relative rounded-lg overflow-hidden group h-96 bg-cover bg-center" style={{ backgroundImage: `url(${study.imageUrl})` }}>
-						<div className="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-70 transition-all duration-300"></div>
-						<div className="relative h-full flex flex-col justify-end p-8">
-							<img src={study.clientLogo} alt="Client Logo" className="h-10 w-auto mb-6" />
-							<h3 className="text-2xl font-bold text-white leading-tight">{study.title}</h3>
-						</div>
-						<a href="#" className="absolute inset-0" aria-label={study.title}></a>
-					</div>
-				))}
-			</div>
-		</div>
-	</div>
-);
-
-const CtaSection = () => (
-	<div className="bg-green-500">
-		<div className="max-w-7xl mx-auto text-center py-24 px-4 sm:px-6 lg:px-8">
-			<h2 className="text-4xl font-bold text-white">Ready to build your next big thing?</h2>
-			<p className="mt-4 text-lg text-green-100">Let's turn your idea into a market-leading digital product.</p>
-			<div className="mt-8">
-				<a href="#" className="bg-white text-green-600 font-bold text-lg px-8 py-4 rounded-full hover:bg-gray-100 transition-colors">
-					Get in touch
-				</a>
-			</div>
-		</div>
-	</div>
-);
-
-// --- Main Page Component ---
 
 function IndustriesPage() {
+
+	const navItems = ['Finance and banking',
+		'Retail and ecommerce',
+		'Healthcare',
+		'Education'];
+
 	return (
-		<div className="bg-white">
-			<IndustriesHero />
-			<IndustriesGrid />
-			<BenefitsSection />
-			<FeaturedCaseStudies />
-			<CtaSection />
+		<div className="">
+			<Navbar />
+			<ServiceTop
+  backgroundImage="https://www.netguru.com/hs-fs/hubfs/13(1)%20(1).png?width=1600&height=800&name=13(1)%20(1).png"
+  title="Cross-industry experience in"
+  highlighted="digital acceleration"
+  subtitle="We help businesses across industries drive profitability and customer satisfaction"
+  buttonText="Let's Work Together"
+  buttonHref="#"
+/>
+<SecondNavBar navItems={navItems}/>
+
+<IdeationEvaluation
+  title="Finance and "
+  highlight="banking"
+  description="The global financial landscape is constantly shifting. Your success will depend on the ability to adjust to the evolving environment and provide your clients with an amazing digital experience."
+  layout="row"
+/>
+
+<CaseStudiesSection />
 			<Footer />
 		</div>
 	);

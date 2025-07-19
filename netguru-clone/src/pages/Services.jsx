@@ -4,7 +4,8 @@ import ServiceTop from "../servicePageComponents/ServiceTop.jsx";
 import IdeationEvaluation from "../servicePageComponents/IdeationEvaluation.jsx";
 import Navbar from '../components/Navbar.jsx';
 import SecondNavBar from '../servicePageComponents/secondNavBar.jsx';
-
+import CaseStudies from '../servicePageComponents/caseStudies.jsx';
+import Footer from '../components/Footer.jsx';
 const Services = () => {
 	const navItems = [
         'Ideation',
@@ -27,7 +28,24 @@ const Services = () => {
   buttonHref="#"
 />
 <SecondNavBar navItems={navItems}/>
-<IdeationEvaluation />
+<IdeationEvaluation
+  title="One-stop shop for digital"
+  highlight="startups"
+  description="We help deliver digital excellence at every stage of the product journey, from early ideation to research, prototyping, testing, launch, and ongoing support. Explore our end-to-end services designed to improve business metrics and deliver delightful digital experiences."
+  bg="black"
+/>
+
+ <IdeationEvaluation
+  title="Ideation and "
+  highlight="evaluation"
+  description="Ideas can take a while to mature. We’re here to speed up the process. Plan and evaluate the essential features of your product to accomplish your business goals and enjoy tangible results."
+  layout="row"
+  bg="#25292C"
+/>       
+
+<CaseStudies/>
+
+<Footer/>
 		</div>
 	);
 };

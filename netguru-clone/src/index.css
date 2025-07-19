@@ -10,21 +10,20 @@ body {
 	color: white;
 }
 
-/* You can add this to a component that renders the main content if you want to be more specific */
-.accelerate-digital {
-	font-size: 4rem; /* Or any other size you prefer */
+/* These classes are no longer needed as styling is handled directly in JSX with Tailwind */
+/* .accelerate-digital {
+	font-size: 4rem;
 	font-weight: bold;
 }
 
 .accelerate-digital .digital {
-	color: #00e676; /* Green color for the word "digital" */
-}
+	color: #00e676;
+} */
 
 .scrollbar-hide::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;     /* Firefox */
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;     /* Firefox */
 }
-

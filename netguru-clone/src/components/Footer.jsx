@@ -1,28 +1,24 @@
 import React from 'react';
 
 // --- Data for Footer Links & Logos ---
-// This approach makes the footer easy to update.
-
 const socialLinks = [
 	{ name: 'Behance', url: '#', icon: 'Be' },
-	{ name: 'Dribbble', url: '#', icon: 'dr' },
 	{ name: 'Facebook', url: '#', icon: 'f' },
-	{ name: 'LinkedIn', url: '#', icon: 'lin' },
-	{ name: 'GitHub', url: '#', icon: 'G' }, // Assuming 'in' is LinkedIn
-	{ name: 'Twitter', url: '#', icon: 'X' },
+	{ name: 'LinkedIn', url: '#', icon: 'in' }, // Corrected icon for LinkedIn
+	{ name: 'Twitter', url: '#', icon: 'X' }, // Corrected icon for Twitter
 ];
 
 const certificates = [
-	{ name: '', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/b-corp.svg' },
-	{ name: '', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/tuv-nord.svg' },
+	{ name: 'B-Corp', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/b-corp.svg' },
+	{ name: 'TUV Nord', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/tuv-nord.svg' },
 ];
 
 const partnerships = [
-	{ name: '', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/microsoft.svg' },
-	{ name: '', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/aws.svg' },
-	{ name: '', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/mendix.svg' },
-	{ name: '', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/google-cloud-partner.svg' },
-	{ name: '', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/webflow-premium-partner.svg' },
+	{ name: 'Microsoft', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/microsoft.svg' },
+	{ name: 'AWS', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/aws.svg' },
+	{ name: 'Mendix', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/mendix.svg' },
+	{ name: 'Google Cloud Partner', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/google-cloud-partner.svg' },
+	{ name: 'Webflow Premium Partner', logoUrl: 'https://www.netguru.com/hubfs/_N23/assets/logos/webflow-premium-partner.svg' },
 ];
 
 const recognitions = [
@@ -36,15 +32,18 @@ const recognitions = [
 
 function Footer() {
 	return (
-		<footer className="bg-white text-black">
+		<footer className="bg-black text-white"> {/* Changed background to black and text to white */}
 			<div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
 
 				{/* Top Section: Info, Social, Newsletter */}
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
 					{/* Column 1: Company Info */}
 					<div className="space-y-4">
-						<img src="https://www.netguru.com/hubfs/_N23/assets/logos/netguru.svg" alt=""/>
-						<p>netguru</p>
+						{/* Netguru mini-logo and text as seen in the image */}
+						<div className="flex items-center gap-2 mb-4">
+							<img src="https://www.netguru.com/hubfs/images/logos/favicon.ico" alt="Netguru logo" className="w-6 h-6" />
+							<span className="text-white font-semibold text-xl">netguru</span>
+						</div>
 						<h3 className="font-bold text-white text-lg">Netguru S.A.</h3>
 						<p className="text-sm">
 							Nowe Garbary Office Center <br />
@@ -66,7 +65,7 @@ function Footer() {
 						<h3 className="font-bold text-white text-lg mb-4">Follow Us</h3>
 						<div className="flex space-x-4">
 							{socialLinks.map((link) => (
-								<a key={link.name} href={link.url} className="text-gray-400 hover:text-white transition w-10 h-10 border border-gray-700 rounded-full flex items-center justify-center font-bold">
+								<a key={link.name} href={link.url} className="text-gray-400 hover:text-white transition"> {/* Removed circular styling */}
 									{link.icon}
 								</a>
 							))}
@@ -83,12 +82,22 @@ function Footer() {
 								Submit
 							</button>
 						</form>
+						<p className="mt-4 text-sm text-gray-400"> {/* Added explanatory text */}
+							Netguru is committed to processing the above information in order to subscribe you to the newsletter.
+							Other information is used for statistical purposes and, from time to time, we would like to contact
+							you about our products and services, as well as other content that may be of interest to you. If
+							you consent to contact you for these purposes, please tick the checkbox.
+						</p>
 						<div className="mt-4 flex items-start">
 							<input id="marketing-consent" type="checkbox" className="h-5 w-5 mt-0.5 rounded border-gray-600 bg-gray-700 text-green-500 focus:ring-green-500" />
 							<label htmlFor="marketing-consent" className="ml-3 text-sm text-gray-400">
 								I agree to receive marketing communication from Netguru.
 							</label>
 						</div>
+						<p className="mt-4 text-sm text-gray-400"> {/* Added unsubscribe text */}
+							You can unsubscribe from these communications at any time. For more information on how to
+							unsubscribe, our privacy practices please view our Privacy Policy.
+						</p>
 					</div>
 				</div>
 
@@ -99,17 +108,17 @@ function Footer() {
 						<div>
 							<h4 className="font-semibold text-white mb-6">Certificates:</h4>
 							<div className="flex items-center gap-8">
-								{certificates.map((cert) => (
-									<img key={cert.name} src={cert.logoUrl} alt={cert.name} className="h-16 object-contain" />
-								))}
+								{certificates.map((cert, index) => (
+									<img key={index} src={cert.logoUrl} alt={cert.name} className="h-16 object-contain filter grayscale brightness-0 invert" />
+									))}
 							</div>
 						</div>
 						<div>
 							<h4 className="font-semibold text-white mb-6">Partnerships:</h4>
 							<div className="grid grid-cols-2 sm:grid-cols-3 gap-8 items-center">
-								{partnerships.map((partner) => (
-									<img key={partner.name} src={partner.logoUrl} alt={partner.name} className="h-8 object-contain" />
-								))}
+								{partnerships.map((partner, index) => (
+									<img key={index} src={partner.logoUrl} alt={partner.name} className="h-8 object-contain filter grayscale brightness-0 invert" />
+									))}
 							</div>
 						</div>
 					</div>
@@ -118,9 +127,9 @@ function Footer() {
 					<div>
 						<h4 className="font-semibold text-white mb-6">Recognized by:</h4>
 						<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
-							{recognitions.map((rec) => (
-								<img key={rec.name} src={rec.logoUrl} alt={rec.name} className="h-10 object-contain" />
-							))}
+							{recognitions.map((rec, index) => (
+								<img key={index} src={rec.logoUrl} alt={rec.name} className="h-10 object-contain filter grayscale brightness-0 invert" /> 
+								))}
 						</div>
 					</div>
 				</div>

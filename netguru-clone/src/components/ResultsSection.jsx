@@ -22,13 +22,13 @@ const statsData = [
 
 function ResultsSection() {
 	return (
-		<div className="bg-black text-white">
+		<div className="bg-[#1a1a1a] text-white"> {/* Changed background color to precisely match the image */}
 			<section className="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8">
 
 				{/* Header Section */}
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
 					<div>
-						<h2 className="text-4xl tracking-tight">
+						<h2 className="text-4xl md:text-5xl font-bold tracking-tight"> {/* Adjusted font size and made it bolder for prominence */}
 							See <span className="text-green-400">tangible results</span>
 						</h2>
 					</div>

@@ -80,7 +80,7 @@ function InsightsSection() {
 								{insight.type === 'PODCAST' && (
 									<div className="mb-4">
 										{/* You can replace this text with the "Disruption Talks" logo image */}
-										<p className="text-lg font-bold text-white mb-2">Disruption Talks</p>
+										<p className="text-lg font-bold text-white mb-2">PODCAST</p>
 									</div>
 								)}
 

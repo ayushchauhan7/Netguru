@@ -44,7 +44,7 @@ function ClientsSection() {
 							<img
 								src={client.logoUrl}
 								alt={`${client.name} logo`} // Populated alt text
-								className="h-8 md:h-10 object-contain filter grayscale brightness-0 invert"
+								className="h-1 md:h-6 object-contain filter grayscale brightness-0 invert"
 							/>
 						</div>
 					))}

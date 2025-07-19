@@ -30,7 +30,7 @@ const Nav = () => {
 
 				<a
 					href="/estimate-project"
-					className="flex items-center gap-2 bg-white text-black font-semibold px-5 py-2 rounded-full border border-white hover:bg-gray-100 transition"
+					className="flex items-center gap-2 bg-green-400 text-black font-semibold px-5 py-2 rounded-full border border-white hover:bg-gray-100 transition"
 				>
 					Get in touch <ArrowRight size={16} />
 				</a>

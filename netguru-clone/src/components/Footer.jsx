@@ -89,7 +89,7 @@ function Footer() {
 							you consent to contact you for these purposes, please tick the checkbox.
 						</p>
 						<div className="mt-4 flex items-start">
-							<input id="marketing-consent" type="checkbox" className="h-5 w-5 mt-0.5 rounded border-gray-600 bg-gray-700 text-green-500 focus:ring-green-500" />
+							<input id="marketing-consent" type="checkbox" className="h-5 w-5 mt-0.5 rounded border-gray-600 bg-gray text-green-500 focus:ring-green-500" />
 							<label htmlFor="marketing-consent" className="ml-3 text-sm text-gray-400">
 								I agree to receive marketing communication from Netguru.
 							</label>
@@ -137,7 +137,7 @@ function Footer() {
 			</div>
 
 			{/* Bottom Bar */}
-			<div className="bg-gray-900 border-t border-gray-800">
+			<div className="bg-gray border-t border-gray-800">
 				<div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400">
 					<p>&copy; {new Date().getFullYear()} Netguru S.A. All rights reserved.</p>
 					<div className="flex space-x-6 mt-4 sm:mt-0">

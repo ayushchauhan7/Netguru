@@ -1,0 +1,89 @@
+.mainNavbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 6rem;
+  z-index: 1000;
+  width: 100vw;
+  transition: background 0.3s, transform 0.3s, opacity 0.3s;
+  will-change: transform, background, opacity;
+  font-family: "AvertaStd", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+  gap: 4rem;
+}
+.logo img {
+  width: 130px;
+  height: 25px;
+}
+.menu {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+.link {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+.link:hover {
+  color: #00d563;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: .5em;
+  background: #00d563;
+  color: #fff;
+  font-weight: 600;
+  border-radius: .4rem;
+  padding: .9em 2.3em;
+  text-decoration: none;
+  border: 1px solid #00d563;
+  transition: background 0.2s, color 0.2s;
+}
+.button:hover {
+  background: #9feec4;
+  color: #25292c;
+}
+.arrowIcon {
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  background: url('https://www.netguru.com/hubfs/_N23/assets/icons/arrow-right.svg') no-repeat center/contain;
+  margin-left: 0.5em;
+}
+
+/* Transparent at top */
+.transparent {
+  background: linear-gradient(180deg, rgba(0,0,0,0.0) 60%, rgba(0,0,0,0.0) 100%);
+  color: #fff;
+  box-shadow: none;
+}
+
+/* Black background when visible after scroll up */
+.visible {
+  background: #0b0c0d;
+  color: #fff;
+  box-shadow: 0 2rem 4rem rgb(0 0 0 / 10%);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Hide on scroll down */
+.hidden {
+  background: #0b0c0d;
+  color: #fff;
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
